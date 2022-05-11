@@ -55,6 +55,8 @@ async function init() {
                 fs.mkdirSync(path.join(projectDir, "ServerPackages"))
             }
             fs.renameSync(path.join(projectDir, "_gitignore"), path.join(projectDir, ".gitignore"))
+            fs.mkdirSync(path.join(projectDir, "src", "ReplicatedStorage"))
+            fs.mkdirSync(path.join(projectDir, "src", "ServerStorage"))
             setProjectName(projectDir, projectName, spinner)
 
         })
