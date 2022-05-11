@@ -16,8 +16,3 @@ and this command will stay with you forever (unless you uninstall it 🙂)
 ```
 knit-init
 ```
-
-### npx
-```
-npx knit-init
-```
