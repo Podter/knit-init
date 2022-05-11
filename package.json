@@ -12,7 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/Podter/knit-init.git"
   },
-  "keywords": [],
+  "keywords": [
+    "game",
+    "library",
+    "framework",
+    "roblox",
+    "rojo",
+    "knit"
+  ],
   "author": "Podter",
   "license": "MIT",
   "bugs": {
