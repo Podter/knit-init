@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const inquirer = require("inquirer");
-const fs = require("fs")
-const path = require("path")
+import inquirer from "inquirer";
+import fs from "fs"
+import path from "path"
 const args = process.argv.slice(2);
 
-let projectName
+let projectName: any
 let projectDir
 
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
@@ -54,9 +54,10 @@ async function getDir() {
     }
 }
 
-async function init(){
+async function init() {
     await getName()
     await getDir()
+    console.log(args)
     console.log(path.join(__dirname, projectName))
 }
 
