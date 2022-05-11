@@ -2,12 +2,12 @@
   "name": "knit-init",
   "version": "1.0.0",
   "description": "Set up a Roblox Knit project by running one single command",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "bin": "dist/index.js",
   "scripts": {
     "start": "shx echo \"Use node dist/index.js instead\" && exit 1",
-    "build": "tsc && shx cp -R template dist/",
-    "dev": "shx echo \"Use ts-node index.ts instead\" && exit 1"
+    "build": "tsc && shx cp -R src/template dist/",
+    "dev": "shx echo \"Use ts-node src/index.ts instead\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,9 @@
   },
   "engines": {
     "node": ">= 14.0.0"
-  }
+  },
+  "files": [
+    "dist/*.js",
+    "dist/**/*.js"
+  ]
 }
