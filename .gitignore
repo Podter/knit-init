@@ -132,3 +132,4 @@ package-lock.json
 # Template
 template/Packages
 template/ServerPackages
+template/roblox.toml
