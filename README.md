@@ -1,5 +1,5 @@
 # knit-init
-Set up a Roblox Knit project by running one single command
+Set up a Roblox [Knit](https://github.com/Sleitnick/Knit) project by running one single command
 
 ## Why Node.js
 One simple answer. I'm noob, idk how to make cli tools using Rust or something else
