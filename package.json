@@ -5,7 +5,7 @@
   "bin": "dist/index.js",
   "scripts": {
     "start": "shx echo \"Use node dist/index.js instead\" && exit 1",
-    "build": "tsc && shx cp -R src/template dist/",
+    "build": "shx rm -rf dist && tsc && shx cp -R src/template dist/",
     "dev": "shx echo \"Use ts-node src/index.ts instead\" && exit 1"
   },
   "repository": {
