@@ -2,7 +2,6 @@
   "name": "knit-init",
   "description": "Set up a Roblox Knit project by running one single command",
   "main": "index.js",
-  "type": "module",
   "bin": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Podter/knit-init/issues"
   },
-  "homepage": "https://github.com/Podter/knit-init#readme"
+  "homepage": "https://github.com/Podter/knit-init#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
