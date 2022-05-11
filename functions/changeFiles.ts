@@ -29,7 +29,7 @@ export function setProjectName(projectDir: any, projectName: any, spinner: any) 
             path.join(projectDir, "README.md")
         ],
         from: /my-knit-project/g,
-        to: `"${projectName}"`
+        to: `${projectName}`
     }
     replaceInFile(options, (err) => {
         if (err) {
