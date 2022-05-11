@@ -2,7 +2,6 @@
   "name": "knit-init",
   "version": "1.0.0",
   "description": "Set up a Roblox Knit project by running one single command",
-  "main": "src/index.ts",
   "bin": "dist/index.js",
   "scripts": {
     "start": "shx echo \"Use node dist/index.js instead\" && exit 1",
