@@ -1,0 +1,21 @@
+{
+  "name": "knit-init",
+  "description": "Set up a Roblox Knit project by running one single command",
+  "main": "index.js",
+  "type": "module",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Podter/knit-init.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Podter/knit-init/issues"
+  },
+  "homepage": "https://github.com/Podter/knit-init#readme"
+}
