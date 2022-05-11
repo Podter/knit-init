@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-import "require-esm-as-empty-object"
 import { createSpinner } from "nanospinner";
 import fs from 'fs-extra'
 import path from "path"
-import chalk from "chalk"
 import { exec } from "child_process";
 
 import getDir from "./functions/getDir"
@@ -17,14 +15,15 @@ const args = process.argv.slice(2);
 const sleep = (ms = 500) => new Promise((r) => setTimeout(r, ms))
 
 async function init() {
+    const spinner = createSpinner("Creating project")
     const projectName = await getName(args)
     const projectDir = await getDir(args, projectName)
     if (await checkDir(projectDir) === true) {
-        console.log(`${chalk.red("✖")} Directory ${projectDir} already exists.`);
+        spinner.error({ text: `Directory ${projectDir} already exists.` });
         process.exit(1)
     }
     const isServerPackages = await askServerPackages()
-    const spinner = createSpinner("Creating project").start()
+    spinner.start()
 
     await sleep()
     fs.mkdirSync(projectDir)
