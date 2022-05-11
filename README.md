@@ -39,3 +39,12 @@ knit-init
 
 - **Project name** Your project name (Default: `my-knit-project`)
 - **Create ServerPackages folder?** Do you want to create ServerPackages folder and add it to `default.project.json`? (Default: `No`, you can do it manually later)
+
+You can do this if you want to do something faster
+```
+knit-init [your project name]
+```
+like this:
+```
+knit-init my-awesome-project
+```
