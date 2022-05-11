@@ -23,8 +23,12 @@ export function addServerPackages(projectDir: any, spinner: any) {
 
 export function setProjectName(projectDir: any, projectName: any, spinner: any) {
     const options = {
-        files: path.join(projectDir, "default.project.json"),
-        from: /"my-knit-project"/g,
+        files: [
+            path.join(projectDir, "default.project.json"),
+            path.join(projectDir, "wally.toml"),
+            path.join(projectDir, "README.md")
+        ],
+        from: /my-knit-project/g,
         to: `"${projectName}"`
     }
     replaceInFile(options, (err) => {
