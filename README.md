@@ -48,4 +48,4 @@ knit-init [project_name]
 ## Templates
 You can see templates in this repository [branches](https://github.com/Podter/knit-init/branches). These are available templates that you can use.
 - [template-base](https://github.com/Podter/knit-init/tree/template-base) Base template with Knit installed and nothing else
-- [template-server-packages](https://github.com/Podter/knit-init/tree/template-server-packages)
+- [template-server-packages](https://github.com/Podter/knit-init/tree/template-server-packages) Same as Base Template but with ServerPackages setup
