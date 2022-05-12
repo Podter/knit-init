@@ -43,10 +43,9 @@ knit-init [project_name]
 ```
 
 - **Project name** Your project name (Default: `my-knit-project`)
-- **Template** Template to use (Default: `Base`)
+- **Template** Template to use, see [Templates](#Templates) for more infomation (Default: `Base`)
 
-## Template
+## Templates
 You can see templates in this repository [branches](https://github.com/Podter/knit-init/branches). These are available templates that you can use.
-- [template-base](https://github.com/Podter/knit-init/tree/template-base)
-- [template-complete](https://github.com/Podter/knit-init/tree/template-complete)
+- [template-base](https://github.com/Podter/knit-init/tree/template-base) Base template with Knit installed and nothing else
 - [template-server-packages](https://github.com/Podter/knit-init/tree/template-server-packages)
