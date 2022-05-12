@@ -1,8 +1,8 @@
 import fs from 'fs-extra'
 import path from "path"
-import { replaceInFile } from 'replace-in-file';
+import replaceInFile from 'replace-in-file';
 
-export function addKnitToWally(projectDir: any, spinner: any) {
+export function addKnitToWally(projectDir, spinner) {
     fs.appendFile(path.join(projectDir, "wally.toml"), `Knit = "sleitnick/knit@^1.4"`, function (err) {
         if (err) {
             spinner.error({ text: `Error:\n${err}` });
@@ -11,7 +11,7 @@ export function addKnitToWally(projectDir: any, spinner: any) {
     })
 }
 
-export function addServerPackages(projectDir: any, spinner: any) {
+export function addServerPackages(projectDir, spinner) {
     fs.appendFile(path.join(projectDir, "wally.toml"), `\n[server-dependencies]`, function (err) {
         if (err) {
             spinner.error({ text: `Error:\n${err}` });
@@ -21,7 +21,7 @@ export function addServerPackages(projectDir: any, spinner: any) {
 }
 
 
-export function setProjectName(projectDir: any, projectName: any, spinner: any) {
+export function setProjectName(projectDir, projectName, spinner) {
     const options = {
         files: [
             path.join(projectDir, "default.project.json"),

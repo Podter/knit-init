@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
 
-export default async function getName(args: any) {
+export default async function getName(args) {
     if (args[0]) {
         return args[0]
     } else {
