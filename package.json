@@ -1,6 +1,6 @@
 {
   "name": "knit-init",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set up a Roblox Knit project by running one single command",
   "main": "index.js",
   "bin": "index.js",
