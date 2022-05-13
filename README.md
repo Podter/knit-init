@@ -1,5 +1,6 @@
 # knit-init
 <a href="https://www.npmjs.com/package/knit-init"><img src="https://img.shields.io/npm/v/knit-init.svg?style=for-the-badge&maxAge=3600" alt="npm version" /></a>
+
 Set up a Roblox [Knit](https://github.com/Sleitnick/Knit) project with VS Code Snippets by running one single command
 
 ## Why Node.js
