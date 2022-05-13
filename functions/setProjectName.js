@@ -24,7 +24,7 @@ export default async function setProjectName(projectDir, projectName, spinner) {
     const username = {
         files: path.join(projectDir, "wally.toml"),
         from: /myName/g,
-        to: `${userInfo().username}`
+        to: `${userInfo().username.toLowerCase}`
     }
     await doReplace(name, spinner)
     await doReplace(username, spinner)
