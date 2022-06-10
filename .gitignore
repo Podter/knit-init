@@ -126,9 +126,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# Package lock
-package-lock.json
-
 # Template
 template/Packages
 template/ServerPackages
